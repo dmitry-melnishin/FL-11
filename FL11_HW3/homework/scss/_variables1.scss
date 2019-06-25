@@ -1,0 +1,23 @@
+$fontSet: (
+  "font1": 'Source Sans Pro',
+  "font2": 'Hind',
+  "font3": 'Fresca',
+  "usual": 'sans-serif'
+);
+
+$font1: map-get($fontSet, "font1");
+$font2: map-get($fontSet, "font2");
+$font3: map-get($fontSet, "font3");
+
+$bodyBg: #fff;
+$headerBg: url(../img/m-h-day.jpg);
+$CardsAndFooterBg: #21232e;
+
+
+$color: #2c2f3c;
+
+$underline: #14a0c7;
+
+$buttonBg: #699900;
+
+$gradient: linear-gradient(45deg, #639317 0%, #2c5ade 100%);

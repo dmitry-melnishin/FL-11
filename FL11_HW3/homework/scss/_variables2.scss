@@ -1,0 +1,23 @@
+$fontSet: (
+  "font1": 'Source Sans Pro',
+  "font2": 'Hind',
+  "font3": 'Fresca',
+  "usual": 'sans-serif'
+);
+
+$font1: map-get($fontSet, "font1");
+$font2: map-get($fontSet, "font3");
+$font3: map-get($fontSet, "font2");
+
+$bodyBg: #21232e;
+$headerBg: url(../img/m-h-night.jpg);
+$CardsAndFooterBg: #3b3f50;
+
+
+$color: #fff;
+
+$underline: #ff4e33;
+
+$buttonBg: #e3ac00;
+
+$gradient: linear-gradient(45deg, #dea506 0%, #942f50 100%);

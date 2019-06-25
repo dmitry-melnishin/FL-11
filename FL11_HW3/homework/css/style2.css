@@ -1,0 +1,243 @@
+body {
+  font-family: "Source Sans Pro";
+  color: #fff;
+  background-color: #21232e;
+  margin: 0;
+  width: 1920px;
+}
+
+.header {
+  background: url(../img/m-h-night.jpg);
+  background-position: 0 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 0 40% 0;
+  padding-bottom: 220px;
+}
+.header-wrap {
+  width: 1536px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 25px;
+}
+.header_heading {
+  position: relative;
+  z-index: 10;
+  width: 700px;
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-top: 77px;
+  margin-bottom: 38px;
+}
+.header_heading::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-color: #ff4e33;
+  bottom: 5px;
+  left: 0;
+  width: 378px;
+  height: 30px;
+}
+.header_text {
+  width: 800px;
+  font-family: "Fresca";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+  margin-bottom: 67px;
+  white-space: pre-line;
+}
+.header_button, .section .section_banner_button {
+  font-family: "Source Sans Pro";
+  background-color: #e3ac00;
+  padding: 16px 55px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.header_button:hover, .section .section_banner_button:hover {
+  cursor: pointer;
+}
+
+.landing-logo {
+  display: flex;
+}
+.landing-logo img {
+  width: 55px;
+  height: 55px;
+}
+.landing-logo p {
+  font-family: "Fresca";
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.2;
+  padding-left: 20px;
+}
+.landing-logo p span {
+  display: block;
+  font-size: 13px;
+}
+
+.section {
+  position: relative;
+  z-index: 5;
+}
+.section_text {
+  position: relative;
+  z-index: 10;
+  width: 600px;
+  text-align: center;
+  font-size: 53px;
+  font-weight: 600;
+  color: #fff;
+  margin: 45px auto;
+  margin-bottom: 46px;
+}
+.section_text::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-color: #ff4e33;
+  bottom: 10px;
+  right: 54px;
+  width: 237px;
+  height: 16px;
+}
+.section .section_card_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 1536px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-bottom: 265px;
+}
+.section .section_card_wrap .section_card {
+  flex: 1;
+  padding: 25px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #3b3f50;
+  color: #fff;
+  border-radius: 5px;
+}
+.section .section_card_wrap .section_card:not(:last-child) {
+  margin-right: 25px;
+}
+.section .section_card_wrap .section_card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.section .section_card_wrap .section_card_heading {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 15px 0 20px 0;
+}
+.section .section_card_wrap .section_card_heading:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-color: #ff4e33;
+  bottom: 0;
+  width: 100%;
+  height: 16px;
+}
+.section .section_card_wrap .section_card_text {
+  display: flex;
+  align-items: center;
+  font-family: "Fresca";
+  opacity: 0.7;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.section .section_banner {
+  position: absolute;
+  z-index: 10;
+  bottom: -90px;
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  min-height: 180px;
+  margin: 0 auto;
+  transform: translateX(-50%);
+  background: linear-gradient(45deg, #dea506 0%, #942f50 100%);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.section .section_banner_button {
+  align-self: center;
+}
+.section .section_banner_heading {
+  position: relative;
+  z-index: 1;
+  font-weight: 800;
+  font-size: 38px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+.section .section_banner_heading::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-color: #ff4e33;
+  bottom: 3px;
+  left: 152px;
+  width: 80px;
+  height: 16px;
+}
+.section .section_banner_text {
+  font-family: "Fresca";
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.footer {
+  background-color: #3b3f50;
+  color: #fff;
+  min-height: 302px;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1536px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 148px;
+  line-height: 32px;
+}
+.footer-wrap .footer_logo {
+  padding-top: 0;
+}
+.footer-wrap .footer_logo p {
+  opacity: 0.7;
+}
+.footer-wrap .footer_text {
+  width: 400px;
+  font-family: "Fresca";
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0;
+  opacity: 0.7;
+}
+.footer-wrap .footer-cr {
+  font-family: "Fresca";
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style2.css.map */

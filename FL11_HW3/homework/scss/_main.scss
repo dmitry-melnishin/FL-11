@@ -1,0 +1,267 @@
+@mixin underline {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-color: $underline;
+}
+
+@mixin contentAlignment {
+  width: 1536px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body {
+  font-family: $font1;
+  color: $color;
+  background-color: $bodyBg;
+  margin: 0;
+  width: 1920px;
+}
+
+.header {
+  background: $headerBg;
+  background-position: 0 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 0 40% 0;
+  padding-bottom: 220px;
+
+  &-wrap {
+    @include contentAlignment;
+    padding-top: 25px;
+  }
+
+  &_heading {
+    position: relative;
+    z-index: 10;
+    width: 700px;
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-top: 77px;
+    margin-bottom: 38px;
+
+    &::before {
+      @include underline;
+      bottom: 5px;
+      left: 0;
+      width: 378px;
+      height: 30px;
+    }
+  }
+
+  &_text {
+    width: 800px;
+    font-family: $font2;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0;
+    margin-bottom: 67px;
+    white-space: pre-line;
+  }
+
+  &_button {
+    font-family: $font1;
+    background-color: $buttonBg;
+    padding: 16px 55px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+}
+
+.landing-logo {
+  display: flex;
+
+  img {
+    width: 55px;
+    height: 55px;
+  }
+
+  p {
+    font-family: $font2;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-left: 20px;
+
+    span {
+      display: block;
+      font-size: 13px;
+    }
+  }
+}
+
+.section {
+  position: relative;
+  z-index: 5;
+
+  &_text {
+    position: relative;
+    z-index: 10;
+    width: 600px;
+    text-align: center;
+    font-size: 53px;
+    font-weight: 600;
+    color: $color;
+    margin: 45px auto;
+    margin-bottom: 46px;
+
+    &::before {
+      @include underline;
+      bottom: 10px;
+      right: 54px;
+      width: 237px;
+      height: 16px;
+    }
+  }
+
+  .section_card_wrap {
+    display: flex;
+    justify-content: space-between;
+    @include contentAlignment;
+    padding-bottom: 265px;
+
+    .section_card {
+      flex: 1;
+      padding: 25px;
+      box-sizing: border-box;
+      text-align: center;
+      background-color: $CardsAndFooterBg;
+      color: #fff;
+      border-radius: 5px;
+
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      &_heading {
+        position: relative;
+        z-index: 10;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 30px;
+        margin: 15px 0 20px 0;
+
+        &:before {
+          @include underline;
+          bottom: 0;
+          width: 100%;
+          height: 16px;
+        }
+      }
+
+      &_text {
+        display: flex;
+        align-items: center;
+        font-family: $font2;
+        opacity: 0.7;
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.5;
+
+      }
+
+    }
+  }
+
+  .section_banner {
+    position: absolute;
+    z-index: 10;
+    bottom: -90px;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    min-height: 180px;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    background: $gradient;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    &_button {
+      @extend .header_button;
+      align-self: center;
+    }
+
+    &_heading {
+      position: relative;
+      z-index: 1;
+      font-weight: 800;
+      font-size: 38px;
+      margin-top: 35px;
+      margin-bottom: 20px;
+
+      &::before {
+        @include underline;
+        bottom: 3px;
+        left: 152px;
+        width: 80px;
+        height: 16px;
+      }
+    }
+
+    &_text {
+      font-family: $font2;
+      font-size: 20px;
+      color: #fff;
+      opacity: 0.7;
+    }
+  }
+}
+
+.footer {
+  background-color: $CardsAndFooterBg;
+  color: #fff;
+  min-height: 302px;
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include contentAlignment;
+    padding-top: 148px;
+    line-height: 32px;
+
+    .footer_logo {
+      padding-top: 0;
+      p {
+        opacity: 0.7;
+      }
+    }
+
+    .footer_text {
+      width: 400px;
+      font-family: $font2;
+      font-size: 20px;
+      font-weight: 100;
+      margin: 0;
+      opacity: 0.7;
+    }
+
+    .footer-cr {
+      font-family: $font2;
+      font-size: 20px;
+      opacity: 0.7;
+    }
+  }
+}
